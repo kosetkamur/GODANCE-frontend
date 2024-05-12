@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    &__logo {
+        border: 1px solid #00BBB6;
+        padding: 5px 15px;
+        border-radius: 50px;
+        color: #ffffff;
+        background-color: #00BBB6;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        &_item {
+            font-size: 18px;
+            color: #000000;
+        }
+        &_item.active {
+            color: #00BBB6;
+            border-bottom: 1px solid #00BBB6;
+        }
+        &_item:hover {
+            color: #00BBB6;
+        }
+    }
+    &__auth {
+        display: flex;
+        justify-content: flex-end;
+        &_button {
+            border: 1px solid #000000;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background: transparent;
+            text-transform: uppercase;
+        }
+    }
+}

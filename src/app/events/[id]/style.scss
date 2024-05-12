@@ -1,0 +1,30 @@
+.event {
+   width: 100%;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    &_block {
+      width: 50%;
+    }
+
+    &_image__img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    &_description {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+}

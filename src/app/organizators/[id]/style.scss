@@ -1,0 +1,125 @@
+.organizator-component {
+  width: 100%;
+  margin-top: 50px;
+
+  &__teacher {
+    &_cards {
+      display: grid;
+      grid-template-columns: repeat(4, 24%);
+      gap: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+
+    &_image {
+      width: 50%;
+      &__img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+        border-radius: 10px;
+      }
+    }
+
+    &_description {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 15px;
+
+        &_h1 {
+          line-height: .85;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__container {
+
+    &_cards {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      gap: 10px;
+    }
+
+    &_description {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+
+  &__reviews {
+    width: 100%;
+
+    &_container{
+      display: grid;
+      grid-template-columns: 20% 80%;
+
+      &__item {
+
+        &_rating {
+          display: flex;
+          flex-direction: row;
+          font-size: 5rem;
+          align-items: center;
+          font-weight: 600;
+          gap: 20px;
+        }
+
+        &_cards {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          &__item {
+            width: 100%;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &_autor {
+              display: flex;
+              flex-direction: row;
+              gap: 7px;
+              font-size: 1.25rem;
+            }
+
+            &_date {
+              color: #6c6c6c;
+              font-size: 1rem;
+            }
+
+            &_body {
+              font-size: 1.25rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
